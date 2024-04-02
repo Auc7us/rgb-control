@@ -5,7 +5,7 @@ from bleak import BleakClient
 address = "23:01:02:1D:58:1C"  # The Bluetooth address of your light
 uuid = "0000afd1-0000-1000-8000-00805f9b34fb"  # UUID for the characteristic controlling the light
 ON_HEX = "5bf000b5"  # Hex command to turn the light on
-RED_HEX = "ff0000"  # Assuming RED_HEX is the correct format for setting color
+RED_HEX = "0000ff"  # Assuming RED_HEX is the correct format for setting color
 
 async def set_light_color(client: BleakClient, color_hex: str) -> None:
     """
